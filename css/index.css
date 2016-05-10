@@ -1,0 +1,54 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#container{
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+}
+#container #canvas{
+	position: absolute;
+	z-index: 1;
+}
+#container #blur_img{
+	z-index: 0;
+	width: 800px;
+	height: 500px;
+
+	filter: blur(15px);
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+}
+
+#buttonBox{
+	width: 800px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	top: 520px;
+	margin-left: -400px;
+}
+#buttonBox .button{
+	width: 20%;
+	cursor: pointer;
+	height: 50px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 20%;
+	/*background-color: #666;*/
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+#reset{
+	background-color: #0FB2D8;
+}
+#show{
+	background-color: #2CD80F;
+}
+
